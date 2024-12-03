@@ -751,11 +751,16 @@ a {
   }
 
   .header-panel {
-    height: 56px;
+    /* height: 56px; */
   }
 
   .header-nav {
+    min-width: 320px;
     padding: 15px 0;
+  }
+
+  .header-adaptmenu {
+    margin: auto;
   }
 
   .header-logo {
@@ -773,6 +778,61 @@ a {
   .footer-container,
   .sendform {
     display: block;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .discription-items,
+  .persons {
+    margin-top: 72px;
+  }
+
+  .portfolio-items {
+    margin-top: 48px;
+  }
+
+  .footer-logotext {
+    width: 320px;
+    margin-bottom: 60px;
+  }
+
+  .footer-logo {
+    margin-left: 72px;
+  }
+
+  .footer-content {
+    max-width: 288px;
+    font-size: 16px;
+  }
+
+  .footer-socialmedia {
+    width: 208px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-socialmedialist {
+    display: flex;
+  }
+
+  .footer-socialmediacontent {
+    margin-left: 56px;
+  }
+
+  .footer-form {
+    width: 288px;
+    padding-top: 16px;
+    justify-items: center;
+  }
+
+  .input-sendform {
+    margin-bottom: 24px;
+  }
+
+  .button-sendform {
+    margin: 0 auto;
   }
 }
 
