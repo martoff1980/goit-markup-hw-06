@@ -838,7 +838,7 @@ a {
     height: 100hv;
   }
 
-  . .header-adaptmenu {
+  .header-adaptmenu {
     display: none;
   }
 
@@ -847,30 +847,33 @@ a {
   }
 
   .header-nav {
-    min-width: 768px;
     padding: 15px 0;
-  }
-
-  .header-adaptmenu {
-    margin: auto;
   }
 
   .header-logo {
     height: 24px;
   }
 
-  .header-menu,
   .header-address {
-    display: none;
+    display: block;
   }
 
-  .discription-list,
+  /* .header-panel {
+    display: flex;
+  } */
+
+  /* .header-menu,
+  .header-address {
+    display: block;
+  } */
+
+  /* .discription-list,
   .persons-list,
   .portfolio-list,
   .footer-container,
   .sendform {
     display: block;
-  }
+  } */
 
   .hero-title {
     font-size: 36px;
