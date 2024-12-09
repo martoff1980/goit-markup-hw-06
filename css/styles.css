@@ -838,92 +838,118 @@ a {
     height: 100hv;
   }
 
+  .header-panel {
+    height: 72px;
+  }
+
+  .header-container.container {
+    height: 72px;
+  }
+
   .header-adaptmenu {
     display: none;
   }
 
-  .discription-icon {
-    display: flex;
-  }
-
-  .header-nav {
-    padding: 15px 0;
-  }
-
   .header-logo {
-    height: 24px;
-  }
-
-  .header-address {
-    display: block;
-  }
-
-  /* .header-panel {
     display: flex;
-  } */
+    height: 24px;
+    margin-left: 16px;
+  }
 
-  /* .header-menu,
-  .header-address {
-    display: block;
-  } */
+  .header-menu {
+    display: flex;
+    margin-bottom: 24px;
+    height: 48px;
+  }
 
-  /* .discription-list,
-  .persons-list,
-  .portfolio-list,
-  .footer-container,
-  .sendform {
-    display: block;
-  } */
+  .header-address ul {
+    display: flex;
+    width: 118px;
+    height: 72px;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .header-address a {
+    padding: 0;
+    height: 24px;
+    font-size: 12px;
+  }
 
   .hero-title {
     font-size: 36px;
   }
 
-  .discription-items,
+  .discription-icon {
+    display: none;
+  }
+
+  .discription-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 321px;
+    max-width: 768px;
+    gap: 16px;
+  }
+
+  .discription-item {
+    width: 356px;
+  }
+
+  .banner-team {
+    margin-left: auto;
+    margin-right: auto;
+    width: 552px;
+  }
+
+  .persons-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 552px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
   .persons {
-    margin-top: 72px;
+    width: 264px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    width: 736px;
+    height: 1516px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .portfolio-items img {
+    width: 356px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 
   .footer-logotext {
-    width: 769px;
-    margin-bottom: 60px;
+    margin-left: 108px;
+    margin-right: 0px;
   }
 
   .footer-logo {
-    margin-left: 72px;
+    height: 24px;
   }
 
   .footer-content {
-    max-width: 288px;
-    font-size: 16px;
-  }
-
-  .footer-socialmedia {
-    width: 208px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-socialmedialist {
-    display: flex;
-  }
-
-  .footer-socialmediacontent {
-    margin-left: 56px;
+    max-width: 264px;
+    height: 72px;
   }
 
   .footer-form {
-    width: 288px;
-    padding-top: 16px;
-    justify-items: center;
-  }
-
-  .input-sendform {
-    margin-bottom: 24px;
-  }
-
-  .button-sendform {
-    margin: 0 auto;
+    padding-left: 108px;
   }
 }
 
