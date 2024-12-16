@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  width: 320px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+header {
+  height: 48px;
+}
+
+main {
+  margin: 0;
+}
+
+.modal-buttonclose {
+  display: flex;
+  position: absolute;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e7e9fc;
+}
+
+.modal-buttonclose:hover {
+  border: none;
+  background-color: #404bbf;
+}
+
+.modal-buttonclose:focus {
+  border: none;
+  background-color: #404bbf;
+}
+
+.modal-iconclose {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-buttonclose:hover .modal-iconclose,
+.modal-buttonclose:focus .modal-iconclose {
+  fill: #ffffff;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  padding-bottom: 10px;
+  width: 151px;
+  list-style: none;
+}
+
+.menu ul {
+  display: block;
+}
+
+.menu-item {
+  padding-top: 24px;
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  margin-top: 168px;
+  margin-left: 16px;
+  width: 193px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.contacts ul {
+  display: block;
+}
+
+.contact {
+  margin-bottom: 24px;
+}
+
+.footer-items {
+  margin-top: 72px;
+  margin-bottom: 40px;
+}
+
+.footer-socialmedia {
+  margin-left: 16px;
+  width: 280px;
+}
+
+.footer-socialmedialist {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  list-style: none;
+}
+
+.footer-socialmediaitem {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-socialmedialink {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #4d5ae5;
+}
+
+.footer-socialmedialink:hover,
+.footer-socialmedialink:focus {
+  background-color: #31d0aa;
+}
+
+.footer-socialmediaicon {
+  fill: #f4f4fd;
+}
