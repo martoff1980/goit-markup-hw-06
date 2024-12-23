@@ -783,7 +783,7 @@ a {
 
 .mobile-menu {
   display: block;
-  padding-top: 24px;
+  padding-top: 72px;
   width: 151px;
   list-style: none;
   font-size: 36px;
@@ -792,7 +792,12 @@ a {
 }
 
 .mobile-menu-item {
-  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mobile-menu-item:first-child,
+.mobile-menu-contact:first-child {
+  color: #404bbf;
 }
 
 .mobile-menu-contacts {
@@ -811,8 +816,8 @@ a {
 
 .mobile-menu-socialmedialist {
   display: flex;
-  margin-top: 88px;
-  padding-bottom: 8px;
+  margin-top: 48px;
+  padding-bottom: 40px;
   width: 280px;
   gap: 40px;
   list-style: none;
