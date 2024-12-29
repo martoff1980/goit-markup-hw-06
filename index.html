@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,11 +20,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles_modal.css" />
     <title>Document</title>
   </head>
   <body>
     <div id="mobile-menu-container" class="mobile-menu-container">
-      <button class="mobile-buttonclose" type="button">
+      <button
+        id="close-mobile-menu-button"
+        class="mobile-buttonclose"
+        type="button"
+      >
         <svg class="mobile-iconclose" width="8" height="8">
           <use href="./images/icons.svg#icon-close-1"></use>
         </svg>
@@ -73,7 +80,7 @@
     </div>
     <header class="header-panel">
       <div class="header-container container">
-        <nav class="header-nav open">
+        <nav class="header-nav">
           <a href="./index.html" class="header-logo">
             Web
             <span class="header-text">Studio</span>
@@ -104,6 +111,15 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          id="burger-menu-button"
+          class="mobile-menu-button"
+        >
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu-1"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -352,8 +368,8 @@
                 <img
                   src="./images/banking_app.jpg"
                   alt="many appications"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -371,8 +387,8 @@
                 <img
                   src="./images/cashless_payment.jpg"
                   alt="payment by smartphone"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -390,8 +406,8 @@
                 <img
                   src="./images/meditaion_app.jpg"
                   alt="laptop and smartphone"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -409,8 +425,8 @@
                 <img
                   src="./images/taxi_service.jpg"
                   alt="steering wheel"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -428,8 +444,8 @@
                 <img
                   src="./images/screen_illustrations.jpg"
                   alt="smartphone and four screenshots"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -447,8 +463,8 @@
                 <img
                   src="./images/online_courses.jpg"
                   alt="beautiful girl in orange"
-                  width="360"
-                  height="360"
+                  width="288"
+                  height="280"
                 />
                 <p class="portfolio-active">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -531,5 +547,74 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="modal-container">
+			<div class="modal-window">
+				<button class="modal-buttonclose" type="button">
+					<svg class="modal-iconclose" width="8" height="8">
+						<use href="./images/icons.svg#icon-close-1"></use>
+					</svg>
+				</button>
+				<p class="modal-banner">Leave your contacts and we will call you back</p>
+				<form>
+					<div class="modal-region">
+						<label class="modal-label" for="user-name">Name</label>
+						<div class="modal-inputdata">
+							<input class="modal-input" id="user-name" name="user-name" type="text" />
+							<svg class="modal-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-user-1"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-region">
+						<label class="modal-label" for="user-phone">Phone</label>
+						<div class="modal-inputdata">
+							<input class="modal-input" id="user-phone" name="user-phone" type="text" />
+							<svg class="modal-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-phone-1"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-region">
+						<label class="modal-label" for="user-email">Email</label>
+						<div class="modal-inputdata">
+							<input class="modal-input" id="user-email" name="user-email" type="text" />
+							<svg class="modal-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-email-1"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal-content">
+						<label class="modal-label" for="user-comment">Comment</label>
+						<textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+					</div>
+					<div class="modal-policy">
+						<input class="modal-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy" />
+						<label class="modal-policylabel" for="user-privacy">
+							<span class="modal-policyspan">
+								<svg class="modal-policyicon" width="10" height="8">
+									<use href="./images/icons.svg#icon-checkbox-1"></use>
+								</svg>
+							</span>
+							I accept the terms and conditions of the
+							<a class="modal-policylink">Privacy Policy</a>
+						</label>
+					</div>
+					<button class="modal-buttonsender">Sender</button>
+				</form>
+			</div>
+		</div> -->
+    <script>
+      const button = document.getElementById('burger-menu-button');
+      const div = document.getElementById('mobile-menu-container');
+
+      button.addEventListener('click', () => {
+        div.classList.toggle('is-open');
+      });
+
+      const button2 = document.getElementById('close-mobile-menu-button');
+      button2.addEventListener('click', () => {
+        div.classList.toggle('is-open');
+      });
+    </script>
   </body>
 </html>
