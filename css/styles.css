@@ -269,6 +269,7 @@ img {
 }
 
 .hero-section {
+  margin: 0 auto;
   padding: 72px 0 72px;
   background-repeat: no-repeat;
   background-position: center;
